@@ -41,7 +41,15 @@ int main(int argc, const char * argv[]) {
     
     Uint32 *buffer = new Uint32[SCREEN_WIDTH*SCREEN_HEIGHT];
     
-    memset(buffer, 0xFF, SCREEN_WIDTH*SCREEN_HEIGHT*sizeof(Uint32));
+    // Set all pixels to black
+    memset(buffer, 0, SCREEN_WIDTH*SCREEN_HEIGHT*sizeof(Uint32));
+    
+    // Set an individual pixel to white
+    buffer[30000] = 0xFFFFFFFF;
+    
+//    for(int i=0; i<SCREEN_WIDTH*SCREEN_HEIGHT; i++){
+//        buffer[i] = 0xFFFF00FF;
+//    }
     
     SDL_UpdateTexture(texture, NULL, buffer, SCREEN_WIDTH*sizeof(Uint32));
     SDL_RenderClear(renderer);

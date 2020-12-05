@@ -11,6 +11,7 @@
 		602EC2AE25771E4400C1FF79 /* SDL2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 602EC2AD25771E4400C1FF79 /* SDL2.framework */; };
 		602EC2AF25771E4400C1FF79 /* SDL2.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 602EC2AD25771E4400C1FF79 /* SDL2.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		6074CBEA257953E40077B37D /* Screen.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6074CBE8257953E40077B37D /* Screen.cpp */; };
+		60E18462257AD59A00CFF545 /* Particle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 60E18460257AD59A00CFF545 /* Particle.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -42,6 +43,8 @@
 		602EC2AD25771E4400C1FF79 /* SDL2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2.framework; path = ../../../../../../../../Library/Frameworks/SDL2.framework; sourceTree = "<group>"; };
 		6074CBE8257953E40077B37D /* Screen.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Screen.cpp; sourceTree = "<group>"; };
 		6074CBE9257953E40077B37D /* Screen.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Screen.hpp; sourceTree = "<group>"; };
+		60E18460257AD59A00CFF545 /* Particle.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Particle.cpp; sourceTree = "<group>"; };
+		60E18461257AD59A00CFF545 /* Particle.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Particle.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +82,8 @@
 				602EC29A257716A900C1FF79 /* main.cpp */,
 				6074CBE8257953E40077B37D /* Screen.cpp */,
 				6074CBE9257953E40077B37D /* Screen.hpp */,
+				60E18460257AD59A00CFF545 /* Particle.cpp */,
+				60E18461257AD59A00CFF545 /* Particle.hpp */,
 			);
 			path = simulation;
 			sourceTree = "<group>";
@@ -149,6 +154,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				602EC29B257716A900C1FF79 /* main.cpp in Sources */,
+				60E18462257AD59A00CFF545 /* Particle.cpp in Sources */,
 				6074CBEA257953E40077B37D /* Screen.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

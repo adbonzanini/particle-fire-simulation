@@ -16,8 +16,13 @@ namespace adb {
 struct Particle{ // Difference b/w class and struct is that struct variables are public by default
     double m_x;
     double m_y;
+    
+private:
     double m_speed;
     double m_direction;
+    
+private:
+    void init();
     
 public:
     Particle();
